@@ -1,17 +1,22 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+In this project, we use GitHub to store source code for Flask web application.
+Then use Github Actions to perform Continuous Integration
+Integrate this project with Azure Pipeline to perform Continuous Delivery to Azure App Service
 
 ## Project Plan
-<TODO: Project Plan
-
+Project Plan:
+https://trello.com/b/ykSg6BZX/sprint-board-for-webapp
 * A link to a Trello board for the project
+
+  original project plan.xlsx 
+  final project plan.xlsx
 * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
-
-<TODO:  
+![architecture](architecture.PNG?raw=true "architecture")
 * Architectural Diagram (Shows how key parts of the system work)>
+
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -41,8 +46,8 @@ Port: 443
 > 
 
 ## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
+- Transform project to use microservice
+- Add alert to the project
 
 ## Demo 
 
