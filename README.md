@@ -9,8 +9,9 @@ Project Plan:
 https://trello.com/b/ykSg6BZX/sprint-board-for-webapp
 * A link to a Trello board for the project
 
-  original project plan.xlsx 
-  final project plan.xlsx
+original project plan.xlsx  ![original project plan](original%20project%20plan.PNG?raw=true "original project plan")
+
+final project plan.xlsx ![final project plan](final%20project%20plan.PNG?raw=true "final project plan")
 * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
@@ -50,6 +51,10 @@ Port: 443
 - Add alert to the project
 
 ## Demo 
+Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:)
+Step 2: Working GitHub Actions build   (timestamp:)
+Step 3: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:)
+Step 4: Successful machine learning prediction that returns back a JSON payload. (timestamp:)
 
 <TODO: Add link Screencast on YouTube>
 
