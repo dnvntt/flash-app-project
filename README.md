@@ -43,6 +43,7 @@ Run "Make all" on Azure cloud shell to see the result
 Run application:
 
   export FLASK_APP=app.py
+  
   flask run
 
 ![test_run](test_run.PNG?raw=true "test_run")
@@ -76,10 +77,15 @@ Port: 443
 - Add alert to the project
 
 ## Demo 
+
 Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:)
+
 Step 2: Working GitHub Actions build   (timestamp:)
+
 Step 3: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:)
+
 Step 4: Successful machine learning prediction that returns back a JSON payload. (timestamp:)
+
 
 <TODO: Add link Screencast on YouTube>
 
