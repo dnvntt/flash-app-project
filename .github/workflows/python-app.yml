@@ -18,17 +18,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.7.13
-    uses: actions/setup-python@v3
-    with:
-        python-version: "3.7.13"
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7.17
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7.17
     - name: Install dependencies
-    run: |
+      run: |
         make install
-    - name: Lint with Pylint
-    run: |
+    - name: Lint with pylint
+      run: |
         make lint
     - name: Test with pytest
-    run: |
+      run: |
         make test
