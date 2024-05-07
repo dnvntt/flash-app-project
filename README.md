@@ -78,6 +78,12 @@ In Azure Cloud:
 
 Create virtual machine Ubuntu in Azure cloud to make it as devops agent
 
+Azure Pipeline build and deploy successfull
+![cicd](cicd.PNG?raw=true "cicd")
+
+Load test using Locust
+
+![locust](locust.PNG?raw=true "locust")
    
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
