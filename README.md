@@ -9,9 +9,9 @@ Project Plan:
 https://trello.com/b/ykSg6BZX/sprint-board-for-webapp
 * A link to a Trello board for the project
 
-original project plan.xlsx  ![original project plan](original%20project%20plan.PNG?raw=true "original project plan")
+original project plan.xlsx  ![original project plan](original%20project%20plan.xlsx?raw=true "original project plan")
 
-final project plan.xlsx ![final project plan](final%20project%20plan.PNG?raw=true "final project plan")
+final project plan.xlsx ![final project plan](final%20project%20plan.xlsx?raw=true "final project plan")
 * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
@@ -22,8 +22,15 @@ final project plan.xlsx ![final project plan](final%20project%20plan.PNG?raw=tru
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project cloned into Azure Cloud Shell
-  
-  Using the command below to clond project github
+  create ssh key in Azure cloud shell
+ssh-keygen -t rsa -b 2048 -C "dvkhanhvn@gmail.com"
+
+add ssh key to to github's key https://github.com/settings/keys
+run command below to get content of ssh key and copy to github
+
+cat .ssh/id_rsa.pub
+
+  Using the command below to clone project from github
   
 git clone git@github.com:dnvntt/flask-app-project.git
 ![ProjectCloned](ProjectCloned.PNG?raw=true "ProjectCloned")
@@ -59,6 +66,19 @@ az webapp up -n flask-app-khanh --resource-group Azuredevops --sku FREE
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
+Step 1: in https://dev.azure.com/ create new project
+
+Step 2: in project settings, create Service connections
+
+Step 3: in project settings, create Agent pools => self hosted agent pool 
+
+Step 4: Create new pipeline to automatic run CICD
+
+In Azure Cloud:
+
+Create virtual machine Ubuntu in Azure cloud to make it as devops agent
+
+   
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
 
@@ -70,7 +90,10 @@ Port: 443
 ![make_predict_azure_app](make_predict_azure_app.png?raw=true "make_predict_azure_app")
 
 * Output of streamed log files from deployed application
-> 
+  
+az webapp log tail --name flask-app-khanh --resource-group  Azuredevops
+
+![streamed log](logStream.PNG?raw=true "streamed log")
 
 ## Enhancements
 - Transform project to use microservice
@@ -78,15 +101,20 @@ Port: 443
 
 ## Demo 
 
-Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:)
+Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:00:30)
 
-Step 2: Working GitHub Actions build   (timestamp:)
+Step 2: Deploy project to Azure Web app.  (timestamp:04:50)
 
-Step 3: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:)
+Step 3: Working GitHub Actions build   (timestamp:05:20)
 
-Step 4: Successful machine learning prediction that returns back a JSON payload. (timestamp:)
+Step 4: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:06:46)
+
+Step 5: Successful machine learning prediction that returns back a JSON payload. (timestamp:11:40)
+
+[![Watch the video](https://img.youtube.com/vi/7acZw0hPMNc/hqdefault.jpg)](https://youtu.be/7acZw0hPMNc)
+ 
 
 
-<TODO: Add link Screencast on YouTube>
+
 
 
