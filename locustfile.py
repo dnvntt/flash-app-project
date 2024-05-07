@@ -14,4 +14,4 @@ class WebTests1(HttpUser):
 
     @task(1)
     def testaURL(self):
-        response = self.client.post("/predict",{"CHAS":{"0":0},"RM":{"0":6.575},"TAX":{"0":296.0},"PTRATIO":{"0":15.3},"B":{"0":396.1},"LSTAT":{"0":4.98}})
+        response = self.client.post("/predict", json = {"CHAS":{ "0":0},"RM":{"0":16.3575},"TAX":{"0":296.0},"PTRATIO":{"0":15.3},"B":{"0":326.1},"LSTAT":{"0":42.98}})
