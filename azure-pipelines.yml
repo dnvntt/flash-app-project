@@ -10,7 +10,6 @@ variables:
   azureServiceConnectionId: 'myServiceConnection'
   webAppName: 'flask-app-khanh'
   environmentName: 'flask-app-khanh'
-  # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
 
 pool:
@@ -21,6 +20,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
+    pool: Azure Pipelines
     steps:    
     - script: |
         python3 -m pip install --upgrade pip
@@ -55,6 +55,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     environment: $(environmentName)
+    pool: Azure Pipelines
     strategy:
       runOnce:
         deploy:
