@@ -1,0 +1,1 @@
+az webapp up -n flask-app-khanh --resource-group Azuredevops --sku FREE
