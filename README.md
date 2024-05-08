@@ -55,9 +55,9 @@ Run application:
 
 ![test_run](test_run.PNG?raw=true "test_run")
 
-Github Actions CI
+ GitHub actions badge
 
-![github action](githubAction.PNG?raw=true "github action")
+![github workflow](https://github.com/dnvntt/flask-app-project/actions/workflows/python-app.yml/badge.svg)
 
 * Project running on Azure App Service
 > To deploy Azure webapp using the command below:
