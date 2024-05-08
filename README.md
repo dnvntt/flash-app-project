@@ -55,6 +55,10 @@ Run application:
 
 ![test_run](test_run.PNG?raw=true "test_run")
 
+Github Actions CI
+
+![github action](githubAction.PNG?raw=true "github action")
+
 * Project running on Azure App Service
 > To deploy Azure webapp using the command below:
 > 
@@ -107,17 +111,19 @@ az webapp log tail --name flask-app-khanh --resource-group  Azuredevops
 
 ## Demo 
 
-Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:00:30)
+Step 1: Working Azure Cloud Shell environment for Continuous Integration  (timestamp:00:15)
 
-Step 2: Deploy project to Azure Web app.  (timestamp:04:50)
+Step 2: Github Action.  (timestamp:01:00)
 
-Step 3: Working GitHub Actions build   (timestamp:05:20)
+Step 3: Azure pipeline.  (timestamp:01:20)
 
-Step 4: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:06:46)
+Step 4: Deploy Azure Web app   (timestamp:01:45)
 
-Step 5: Successful machine learning prediction that returns back a JSON payload. (timestamp:11:40)
+Step 5: Successful deployment using Continuous Delivery on the Azure platform, including lint.  (timestamp:02:00)
 
-[![Watch the video](https://img.youtube.com/vi/7acZw0hPMNc/hqdefault.jpg)](https://youtu.be/7acZw0hPMNc)
+Step 5: Successful machine learning prediction that returns back a JSON payload. (timestamp:02:50)
+
+[![Watch the video](https://img.youtube.com/vi/lGrYL5Lqll8/hqdefault.jpg)](https://youtu.be/lGrYL5Lqll8)
  
 
 
